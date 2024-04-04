@@ -14,6 +14,15 @@ variable "region" {
   default     = "us-east-1"
 }
 
+# variable "AWS_ACCESS_KEY_ID" {
+#     description = "Access Key ID for AWS."
+# }
+
+# variable "AWS_SECRET_ACCESS_KEY" {
+#     description = "Secret Access Key for AWS."
+#     sensitive = true
+# }
+
 variable "address_space" {
   description = "The address space that is used by the virtual network. You can supply more than one address space. Changing this forces a new resource to be created."
   default     = "10.0.0.0/16"
